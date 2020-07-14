@@ -1,6 +1,6 @@
 # APM Agent
 
-This module is an instrumentation program responsible for add a custom APM HTTP Header for all your requests.
+This module is an instrumentation program **example** responsible for add a custom APM HTTP Header for all your requests and measure performance using Performance Hooks.
 
 ## Getting started
 
@@ -11,13 +11,13 @@ This module is an instrumentation program responsible for add a custom APM HTTP 
 
 ```js
 require('@erickwendel/ew-agent').start()
-var http = require('http');
+const http = require('http');
 
 function handleRequest(request, response) {
    response.end('Hello, world!');
 }
 
-var server = http.createServer(handleRequest);
+const server = http.createServer(handleRequest);
 
 server.listen(8888);
 ```

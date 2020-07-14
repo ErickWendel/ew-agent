@@ -1,0 +1,20 @@
+{
+  "name": "ew-agent",
+  "version": "1.0.4",
+  "description": "Example of Agent to intercept HTTP Responses and monitor performance",
+  "main": "index.js",
+  "scripts": {
+    "start": "node examples/http-server.js",
+    "test": "node ./src/agent.test.js"
+  },
+  "keywords": ["apm", "perf_hooks", "pino"],
+  "author": "erickwendel",
+  "license": "ISC",
+  "devDependencies": {
+    "sinon": "9.0.0"
+  },
+  "dependencies": {
+    "pino": "6.3.2",
+    "uuid": "8.2.0"
+  }
+}
